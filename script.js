@@ -1,4 +1,4 @@
-const apiUrl = "https://script.google.com/macros/s/AKfycbzWF2iYrp7gQxxDeQmmTRxDfLClRGIL5twTiFsMEYbfYhSBZu-cTMOsPA4at8qyX3GoIw/exec";
+const apiUrl = "https://script.google.com/macros/s/AKfycbwCc-F4XRMqljsKYA4VzoE6AxhoShHnOoUIyTzQQXQ77Qj_NqNGWM75K8uEVrVYBslGMA/exec";
 
 const form = document.getElementById("recordForm");
 const recordsContainer = document.getElementById("records");
