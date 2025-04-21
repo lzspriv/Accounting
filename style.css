@@ -1,0 +1,195 @@
+/* 頁面設定 */
+body {
+    font-family: 'Comic Sans MS', sans-serif;
+    background: linear-gradient(135deg, #A4C3B2, #6B9080);
+    margin: 0;
+    padding: 0;
+}
+
+
+/* 標題 */
+h1 {
+    text-align: center;
+    color: #F6FFF8; /* 淡米色調粉紅色 */
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* 記帳表單 */
+form {
+    background-color: #EAF4F4; /* 淺米色背景 */
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+/* 表單內部元件 */
+form label {
+    font-size: 1.2rem;
+    color: #6B9080; /* 淡米色調粉紅色 */
+    margin-bottom: 8px;
+    display: block;
+}
+
+form input, form select, form button {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 2px solid #6B9080;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    color: #6B9080; /* 深米色文字 */
+    outline: none;
+    box-sizing: border-box;
+}
+
+/* 表單項目的focus效果 */
+form input:focus, form select:focus, form button:focus {
+    border-color: #6B9080; /* 深米色 */
+    box-shadow: 0 0 5px rgba(107, 144, 128, 0.5);
+}
+
+/* 按鈕樣式 */
+form button {
+    background-color: #6B9080;
+    color: white;
+    cursor: pointer;
+    border: none;
+    font-weight: bold;
+}
+
+form button:hover {
+    background-color: #536e62; /* 按鈕的深米色 hover */
+}
+
+/* 記帳紀錄區域 */
+#records {
+    margin-top: 30px;
+}
+
+.record {
+    background-color: #CCE3DE; /* 記帳紀錄的背景顏色 */
+    border-radius: 12px;
+    border: 1px solid #6B9080;
+    padding: 15px;
+    margin: 10px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 記帳紀錄文字 */
+.record p {
+    margin: 8px 0;
+    color: #3e544a; /* 深米色文字 */
+    font-size: 1.1rem;
+}
+
+.record strong {
+    color: #6B9080; /* 淡米色調粉紅色 */
+    font-weight: bold;
+}
+
+/* 記帳紀錄內部的間隔 */
+hr {
+    border: 1px solid #b47f6f;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* 整體容器為 flex 左右排列 */
+.container {
+    display: flex;
+    height: 100vh;
+    max-width: 100%;
+}
+
+/* 左側表單區域固定寬度且不滾動 */
+.left {
+    width: 50%;
+    padding: 30px;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+    align-self: flex-start;
+}
+
+/* 右側紀錄區可滾動 */
+/* 右側紀錄區可滾動 */
+.right {
+    width: 50%;
+    padding: 30px;
+    overflow-y: auto;
+    box-sizing: border-box;
+    height: 100vh;
+}
+
+/* 篩選月份的樣式 */
+.right label, .right input[type="month"] {
+    display: block;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.right input[type="month"] {
+    padding: 10px;
+    font-size: 1.1rem;
+    width: 100%;
+    border: 2px solid #6B9080;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+
+.right h2{
+    color: #ffffff
+}
+
+.form-wrapper {
+    max-width: 550px;
+    margin: 0 auto; /* 置中 */
+}
+
+.view-toggle {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.view-toggle button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #6B9080;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.view-toggle button:hover {
+    background-color: #4e6d60;
+}
+
+.month-filter {
+    margin-bottom: 20px;
+}
+
+.month-filter label {
+    font-size: 1.2rem;
+    color: white;
+    margin-right: 10px;
+}
+
+.month-filter input {
+    padding: 10px;
+    font-size: 1.1rem;
+    border: 2px solid #6B9080;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+
+

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>簡單記帳</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <h1>簡單記帳</h1>
+            <div class="form-wrapper">
+                <form id="recordForm">
+                    <label for="date">日期：</label>
+                    <input type="date" id="date" required>
+
+                    <label for="category">類別：</label>
+                    <select id="category">
+                        <option value="飲食">飲食</option>
+                        <option value="交通">交通</option>
+                        <option value="娛樂">娛樂</option>
+                        <option value="其他">其他</option>
+                    </select>
+
+                    <label for="amount">金額：</label>
+                    <input type="number" id="amount" required>
+
+                    <label for="note">備註：</label>
+                    <input type="text" id="note">
+
+                    <button type="submit">新增記帳</button>
+                </form>
+            </div> 
+        </div>
+        <div class="right">
+            <div class="view-toggle">
+                <button id="view-records" class="active">支出紀錄</button>
+                <button id="view-report">支出報表</button>
+            </div>
+
+            <div class="month-filter">
+                <label for="month">篩選月份：</label>
+                <input type="month" id="month" name="month">
+            </div>
+
+            <div id="records-view" class="view-section">
+                <h2>記帳紀錄</h2>
+                <div id="records"></div>
+            </div>
+
+            <div id="report-view" class="view-section" style="display: none;">
+                <h2>支出報表</h2>
+                <canvas id="categoryChart"></canvas> <!-- 這行是關鍵 -->
+            </div>
+            
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
